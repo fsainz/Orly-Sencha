@@ -1,13 +1,15 @@
-#home.current
-    .toolbar
-        %h1 the orly project
-        = link_to "Full Site", root_url(:mobile => 0), :class => "button", :rel => "external"
-    %ul
-        - Group.all.each do |g|
-            %li.arrow
-                = link_to g.name, group_path(g)
-                // %small.counter 2
-
-
-    .info
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+-#app, models, stores, views, controllers [in that order!] -->
+= javascript_include_tag("app/app")
+= javascript_include_tag("app/models/list_item")
+= javascript_include_tag("app/models/group")
+= javascript_include_tag("app/stores/morestore")
+= javascript_include_tag("app/stores/groupliststore")
+= javascript_include_tag("app/views/homecard")
+= javascript_include_tag("app/views/searchcard")
+= javascript_include_tag("app/views/actioncard")
+= javascript_include_tag("app/views/settingscard")
+= javascript_include_tag("app/views/aboutcard")
+= javascript_include_tag("app/views/bookmarkcard")
+= javascript_include_tag("app/views/morecard")
+= javascript_include_tag("app/views/groupscard")
+= javascript_include_tag("app/views/Viewport")
